@@ -12,6 +12,19 @@
     "type": "git",
     "url": "git+https://github.com/rsheldon3ayers/evernode.git"
   },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+      "no-console": 0,
+      "no-unused-vars": 0,
+      "no-undef": 0,
+      "no-extra-semi": 0
+    }
+  },
   "author": "Robert Ayers <rsheldon3ayers@gmail.com>",
   "license": "MIT",
   "bugs": {
