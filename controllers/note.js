@@ -2,6 +2,7 @@
 
 const Note = require('../models/note');
 
+
 module.exports.edit = (req, res) => {
   Note.findById(req.params.id, (err, note) => {
   res.render('new-note', {note: note});

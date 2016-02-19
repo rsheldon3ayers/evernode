@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const express = require('express');
 const methodOverride = require('method-override');
 const mongoose = require('mongoose');
-
+const category = require('./routes/categories');
 const note = require('./routes/note');
 
 const app = express();
@@ -23,6 +23,7 @@ app.get('/', (req, res) => {
 });
 
 app.use(note);
+app.use(category);
 
 mongoose.connect('mongodb://localhost:27017/evernode', (err) => {
   if (err) throw err;
